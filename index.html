@@ -7,43 +7,39 @@
   <!-- Load Tailwind CSS via script -->
   <script src="https://cdn.tailwindcss.com"></script>
    <!-- Load Font Awesome from cdnjs -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-   />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Load GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
- <!-- Updated Navigation -->
-<header class="bg-white shadow">
-  <div class="container mx-auto px-4 py-6 max-w-5xl flex justify-between items-center">
-    <a href="index.html" id="logo" class="flex items-center space-x-3">
-      <!-- Navigation Image Container with a class for animation -->
-      <div class="w-10 h-10 overflow-hidden rounded-full logo-img">
-        <img src="me.jpg" alt="David Winters" class="object-cover w-full h-full">
-      </div>
-      <!-- Logo Text with a class for animation -->
-      <h1 class="text-2xl font-bold logo-text">David Winters</h1>
-    </a>
-    <nav class="flex items-center space-x-4">
-      <ul class="flex space-x-4">
-        <li><a href="about.html" class="hover:text-blue-500">About</a></li>
-        <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
-        <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
-      </ul>
-      <!-- Social Media Links with Icons -->
-      <div class="flex space-x-3 ml-4">
-        <a href="https://www.tiktok.com/@yourtiktokhandle" target="_blank" class="hover:text-blue-500 text-xl" aria-label="TikTok">
-          <i class="fa-brands fa-tiktok"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/youryoutubechannel" target="_blank" class="hover:text-blue-500 text-xl" aria-label="YouTube">
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </div>
-    </nav>
-  </div>
-</header>
-
+  <!-- Updated Navigation -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 max-w-5xl flex justify-between items-center">
+      <a href="index.html" id="logo" class="flex items-center space-x-3">
+        <div class="w-10 h-10 overflow-hidden rounded-full logo-img">
+          <img src="me.jpg" alt="David Winters" class="object-cover w-full h-full">
+        </div>
+        <h1 class="text-2xl font-bold logo-text">David Winters</h1>
+      </a>
+      <nav class="flex items-center space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+          <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+        <!-- Social Media Links -->
+        <div class="flex space-x-3 ml-4">
+          <a href="https://www.tiktok.com/@yourtiktokhandle" target="_blank" class="hover:text-blue-500 text-xl" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/youryoutubechannel" target="_blank" class="hover:text-blue-500 text-xl" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <!-- Main Content -->
   <main class="container mx-auto px-4 py-10 max-w-5xl">
@@ -51,16 +47,16 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Left Column: Featured Post (spanning 2 columns on medium+ screens) -->
       <div class="md:col-span-2 animate-fade">
-        <a href="blog.html" class="block">
+        <a href="how-i-made-a-website-with-ai.html" class="block">
           <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
             <img 
               src="chatty.png" 
               alt="Creating a Website with AI" 
               class="w-full h-64 object-cover rounded mb-4"
             >
-            <h3 class="text-2xl font-bold mb-2">Creating a Website with AI</h3>
+            <h3 class="text-2xl font-bold mb-2">How I Made a Website with AI</h3>
             <p class="text-gray-700 mb-4">
-              Learn how I utilized AI assistance to build this website. From initial design to final deployment, explore the step-by-step process and the tools that made it possible.
+              Discover the process I went through to create my website with the help of AI—from initial design to implementing animations.
             </p>
             <span class="text-blue-500 hover:underline">Read More →</span>
           </div>
@@ -69,21 +65,18 @@
       
       <!-- Right Column: Other Posts WITHOUT images -->
       <div class="space-y-6">
-        <!-- Post Card 1 -->
         <a href="blog.html#post1" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <h4 class="text-xl font-bold mb-2">Top 5 Things I Hate About Boost.Space</h4>
           <p class="text-gray-600 text-sm mb-2">
             Discover the top 5 frustrations I have with Boost.Space, from usability issues to feature limitations.
           </p>
         </a>
-        <!-- Post Card 2 -->
         <a href="blog.html#post2" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <h4 class="text-xl font-bold mb-2">Thank You, Stripe</h4>
           <p class="text-gray-600 text-sm mb-2">
             A heartfelt appreciation for Stripe's services and how they have made online transactions seamless and efficient.
           </p>
         </a>
-        <!-- Post Card 3 -->
         <a href="blog.html#post3" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <h4 class="text-xl font-bold mb-2">The WordPress Drama</h4>
           <p class="text-gray-600 text-sm mb-2">
@@ -96,53 +89,17 @@
     <!-- Additional Blog Posts Section -->
     <section class="mt-10">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Additional Post Card 1 -->
         <a href="blog.html#post4" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <img src="https://picsum.photos/seed/post4/600/400" alt="Post 4 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
           <h4 class="text-xl font-bold mb-2">Chickens!?!</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            I've got chickens again... for 2 weeks. Read about my experience and the fun (and challenges) of raising chickens temporarily.
-          </p>
         </a>
-        <!-- Additional Post Card 2 -->
         <a href="blog.html#post5" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <img src="https://picsum.photos/seed/post5/600/400" alt="Post 5 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
           <h4 class="text-xl font-bold mb-2">Fresh Dried Herbs</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            I can't believe how awesome it is to grow herbs, dry them, and then cook with them. Discover the joys and benefits of using homegrown herbs in your cooking.
-          </p>
         </a>
-        <!-- Additional Post Card 3 -->
         <a href="blog.html#post6" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
           <img src="https://picsum.photos/seed/post6/600/400" alt="Post 6 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
           <h4 class="text-xl font-bold mb-2">Why Aren't We Talking About UFOs?</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            Are UFOs real or what? Dive into the mysteries and controversies surrounding unidentified flying objects and why the topic isn't getting the attention it deserves.
-          </p>
-        </a>
-        <!-- Additional Post Card 4 -->
-        <a href="blog.html#post7" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
-          <img src="https://picsum.photos/seed/post7/600/400" alt="Post 7 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
-          <h4 class="text-xl font-bold mb-2">Onions, Potatoes, Garlic And More!</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            My wife wants me to be a farmer so she bought me a bunch of vegetables to grow. Read about my journey into vegetable gardening and the joys and challenges it brings.
-          </p>
-        </a>
-        <!-- Additional Post Card 5 -->
-        <a href="blog.html#post8" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
-          <img src="https://picsum.photos/seed/post8/600/400" alt="Post 8 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
-          <h4 class="text-xl font-bold mb-2">VSCode is Too Good To Be True</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            Microsoft always gets theirs so I'm just waiting for the shoe to drop but in the meantime VSCode is pretty sweet. Discover why VSCode is a fantastic tool for developers.
-          </p>
-        </a>
-        <!-- Final Post Card -->
-        <a href="blog.html#post10" class="block bg-white p-4 rounded-lg hover:shadow-md transition-shadow duration-300 animate-fade">
-          <img src="https://picsum.photos/seed/post10/600/400" alt="Post 10 Thumbnail" class="w-full h-40 object-cover rounded mb-4">
-          <h4 class="text-xl font-bold mb-2">Got a Kichenaid</h4>
-          <p class="text-gray-600 text-sm mb-2">
-            I can't wait to get the meat grinder attachment. Stay tuned for my culinary experiments!
-          </p>
         </a>
       </div>
     </section>
@@ -157,7 +114,6 @@
 
   <!-- GSAP Animations -->
   <script>
-    // Animate blog post cards with a stagger effect
     gsap.from(".animate-fade", {
       duration: 1,
       opacity: 0,
@@ -166,6 +122,5 @@
       stagger: 0.2
     });
   </script>
-
 </body>
 </html>
