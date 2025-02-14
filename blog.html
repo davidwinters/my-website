@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - David Winters</title>
+  <!-- Load Tailwind CSS via script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Load Font Awesome from cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        />
+  <!-- Load GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 max-w-5xl flex justify-between items-center">
+      <a href="index.html" id="logo" class="flex items-center space-x-3">
+        <!-- Navigation Image Container with a class for animation -->
+        <div class="w-10 h-10 overflow-hidden rounded-full logo-img">
+          <img src="me.jpg" alt="David Winters" class="object-cover w-full h-full">
+        </div>
+        <!-- Logo Text with a class for animation -->
+        <h1 class="text-2xl font-bold logo-text">David Winters</h1>
+      </a>
+      <nav class="flex items-center space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+          <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+        <!-- Social Media Links with Icons -->
+        <div class="flex space-x-3 ml-4">
+          <a href="https://www.tiktok.com/@yourtiktokhandle" target="_blank" class="hover:text-blue-500 text-xl" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/youryoutubechannel" target="_blank" class="hover:text-blue-500 text-xl" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 max-w-5xl">
+    <h2 class="text-3xl font-bold mb-8">Blog</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Blog Post Card 1 -->
+      <a href="blog.html#post1" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post1/600/400" alt="Post 1 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Creating a Website with AI</h3>
+        <p class="text-gray-700 mb-4">
+          Learn how I utilized AI assistance to build this website. Explore the process from design to deployment.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 2 -->
+      <a href="blog.html#post2" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post2/600/400" alt="Post 2 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Top 5 Things I Hate About Boost.Space</h3>
+        <p class="text-gray-700 mb-4">
+          Discover the top frustrations with Boost.Space, covering usability issues and feature limitations.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 3 -->
+      <a href="blog.html#post3" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post3/600/400" alt="Post 3 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Thank You, Stripe</h3>
+        <p class="text-gray-700 mb-4">
+          A heartfelt appreciation for Stripe's seamless online transaction services.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 4 -->
+      <a href="blog.html#post4" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post4/600/400" alt="Post 4 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">The WordPress Drama</h3>
+        <p class="text-gray-700 mb-4">
+          Dive into the controversies and challenges surrounding WordPress and its community.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 5 -->
+      <a href="blog.html#post5" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post5/600/400" alt="Post 5 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Chickens!?!</h3>
+        <p class="text-gray-700 mb-4">
+          My temporary adventure with raising chickens—fun, challenging, and unexpected.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 6 -->
+      <a href="blog.html#post6" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post6/600/400" alt="Post 6 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Fresh Dried Herbs</h3>
+        <p class="text-gray-700 mb-4">
+          Discover the joys of growing, drying, and cooking with your own herbs.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 7 -->
+      <a href="blog.html#post7" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post7/600/400" alt="Post 7 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">Why Aren't We Talking About UFOs?</h3>
+        <p class="text-gray-700 mb-4">
+          Explore the mysteries and controversies behind unidentified flying objects.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 8 -->
+      <a href="blog.html#post8" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <h3 class="text-2xl font-bold mb-2">Onions, Potatoes, Garlic And More!</h3>
+        <p class="text-gray-700 mb-4">
+          My journey into vegetable gardening—learning the joys and challenges of growing your own food.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+      <!-- Blog Post Card 9 -->
+      <a href="blog.html#post9" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+        <img src="https://picsum.photos/seed/post9/600/400" alt="Post 9 Thumbnail" class="w-full h-48 object-cover rounded mb-4">
+        <h3 class="text-2xl font-bold mb-2">VSCode is Too Good To Be True</h3>
+        <p class="text-gray-700 mb-4">
+          Why VSCode is my go-to tool for development, and what makes it so powerful.
+        </p>
+        <span class="text-blue-500 hover:underline">Read More →</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 py-6 shadow-inner">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-600">&copy; 2025 David Winters. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP Animations -->
+  <script>
+    // Professional logo animation timeline
+    gsap.timeline()
+      .from("#logo .logo-img", {
+        duration: 1,
+        opacity: 0,
+        x: -30,
+        ease: "power3.out"
+      })
+      .from("#logo .logo-text", {
+        duration: 1,
+        opacity: 0,
+        x: 30,
+        ease: "power3.out"
+      }, "-=0.7"); // overlap the animations slightly
+
+    // Animate blog post cards with a stagger effect
+    gsap.from(".animate-fade", {
+      duration: 1,
+      opacity: 0,
+      y: 20,
+      ease: "power3.out",
+      stagger: 0.2
+    });
+  </script>
+</body>
+</html>

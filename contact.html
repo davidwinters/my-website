@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - David Winters</title>
+  <!-- Load Tailwind CSS via script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Load Font Awesome from cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+  <!-- Load GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <!-- Navigation -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 max-w-5xl flex justify-between items-center">
+      <a href="index.html" id="logo" class="flex items-center space-x-3">
+        <!-- Navigation Image Container with a class for animation -->
+        <div class="w-10 h-10 overflow-hidden rounded-full logo-img">
+          <img src="me.jpg" alt="David Winters" class="object-cover w-full h-full">
+        </div>
+        <!-- Logo Text with a class for animation -->
+        <h1 class="text-2xl font-bold logo-text">David Winters</h1>
+      </a>
+      <nav class="flex items-center space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+          <li><a href="blog.html" class="hover:text-blue-500">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+        <!-- Social Media Links with Icons -->
+        <div class="flex space-x-3 ml-4">
+          <a href="https://www.tiktok.com/@yourtiktokhandle" target="_blank" class="hover:text-blue-500 text-xl" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/youryoutubechannel" target="_blank" class="hover:text-blue-500 text-xl" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-10 max-w-5xl">
+    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade">
+      <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+      <p class="text-gray-700 mb-6">
+        I'd love to hear from you! Whether you have a question about my work, a project idea, or just want to say hello, feel free to drop a message using the form below.
+      </p>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="name" class="block text-gray-700 font-medium mb-1">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:border-blue-300">
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 font-medium mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message here..." class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:border-blue-300"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-300">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <div class="mt-8">
+        <h3 class="text-xl font-bold mb-2">Other Ways to Reach Me</h3>
+        <p class="text-gray-700">
+          Email: <a href="mailto:hello@example.com" class="text-blue-500 hover:underline">hello@example.com</a>
+        </p>
+        <p class="text-gray-700">
+          Twitter: <a href="https://twitter.com/yourhandle" class="text-blue-500 hover:underline" target="_blank">twitter.com/yourhandle</a>
+        </p>
+        <p class="text-gray-700 flex items-center space-x-2">
+          <span>TikTok:</span>
+          <a href="https://www.tiktok.com/@yourtiktokhandle" class="text-blue-500 hover:underline" target="_blank" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </p>
+        <p class="text-gray-700 flex items-center space-x-2">
+          <span>YouTube:</span>
+          <a href="https://www.youtube.com/channel/youryoutubechannel" class="text-blue-500 hover:underline" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-10 py-6 shadow-inner">
+    <div class="container mx-auto px-4 text-center">
+      <p class="text-gray-600">&copy; 2025 David Winters. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP Animations -->
+  <script>
+    // Professional logo animation timeline
+    gsap.timeline()
+      .from("#logo .logo-img", {
+        duration: 1,
+        opacity: 0,
+        x: -30,
+        ease: "power3.out"
+      })
+      .from("#logo .logo-text", {
+        duration: 1,
+        opacity: 0,
+        x: 30,
+        ease: "power3.out"
+      }, "-=0.7"); // overlap the animations slightly
+
+    // Animate contact form with a fade-in effect
+    gsap.from(".animate-fade", {
+      duration: 1,
+      opacity: 0,
+      y: 20,
+      ease: "power3.out"
+    });
+  </script>
+</body>
+</html>
